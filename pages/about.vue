@@ -38,7 +38,7 @@
         </div>
         <div class="font-medium text-lg">{{ member.nom }}</div>
         <div class="text-gray-500">{{ member.poste }}</div>
-        <div class="font-medium w-64 text-lg">{{ member.vision }}</div>
+       
       </div>
     </div>
     <p class="text-xl mb-4">
