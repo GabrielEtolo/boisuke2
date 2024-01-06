@@ -16,7 +16,7 @@
       <div
         v-for="member in members"
         :key="member.nom"
-        class="flex flex-col w-auto mb-12 items-center"
+        class="flex flex-col w-auto mb-4 items-center"
       >
         <div
           class="
@@ -38,7 +38,6 @@
         </div>
         <div class="font-medium text-lg">{{ member.nom }}</div>
         <div class="text-gray-500">{{ member.poste }}</div>
-        <div class="font-medium w-64 text-lg"></div>
       </div>
     </div>
     <p class="text-xl mb-4">
@@ -49,15 +48,13 @@
       Plongez dans l'univers de Boisuke, un magazine illustrant la beauté brute,
       l'émotion du moment, les bonheurs invisibles
     </p>
-    <p class="text-gray-300 leading-relaxed my-16">
+    <p class="text-gray-300 leading-relaxed mt-20">
 
       <b>"Boisuke" </b> est une invitation à célébrer le quotidien, à
       reconnaître les bonheurs invisibles souvent négligés et à chérir les liens
       que nous reformons. C'est un périple à travers les yeux de ceux qui voient
       l'art dans le commun, le sublime dans le simple, et l'extraordinaire dans
-      l'ordinaire.
-      <br />
-      <br />
+      l'ordinaire.<br>
       Rejoignez-nous sur ce voyage visuel alors que nous explorons, racontons et
       partageons les histoires de cette jeunesse audacieuse, de ses aspirations
       et de sa quête incessante de significations. <b>Boisuke </b> n'est pas
