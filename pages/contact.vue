@@ -3,7 +3,7 @@
     <div class="text-center">
       <h2 class="text-xl font-semibold mb-4">Contact</h2>
       <h1 class="lg:text-5xl text-3xl font-bold uppercase mb-8">
-        <a href="https://www.instagram.com/boisuke.gen/">Boisuke.editions</a>
+        <a href="https://www.instagram.com/boisuke.editions/">Boisuke.editions</a>
       </h1>
       <ul class="flex flex-col lg:flex-row lg:space-x-20">
         <li class="text-lg font-medium">
