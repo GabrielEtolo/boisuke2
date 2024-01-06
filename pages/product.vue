@@ -9,7 +9,7 @@
         v-for="(boisuke, index) in boisukes.slice(1)"
         :key="boisuke.id"
         class="w-full h-full overflow-hidden fade-in"
-        :style="{ 'animation-delay': index * 0.5 + 's' }"
+        :style="{ 'animation-delay': index * 0.75 + 's' }"
       >
         <div class="image-container h-full">
           <NuxtImg
