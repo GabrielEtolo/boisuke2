@@ -1,5 +1,6 @@
 <template>
   <div class="px-5">
+  
     <ul
       v-if="boisukes"
       class="
@@ -11,15 +12,20 @@
       "
     >
       <!-- Première image avec largeur 1/4 et centrée -->
-      <li v-if="boisukes.length" class="col-span-full flex justify-center my-8">
+      <li v-if="boisukes.length" class="col-span-full flex justify-center my-8 mb-2">
+      
         <NuxtImg
           :src="boisukes[0].photo.url"
           :alt="boisukes[0].title"
-          class="lg:w-1/3 h-auto rounded-lg shadow sm:w-3/4"
+          class="lg:w-1/4 h-auto rounded-lg shadow sm:w-3/4"
+           @click="openPdf(boisukes[0].pdf.url)"
+          
         />
+        
       </li>
-      <!-- Images suivantes sans espacement -->
+      <li class="col-span-full flex justify-center text-gray-500"><p >Cliquer pour voir le pdf</p></li>
     </ul>
+    
     <ul v-else>
       <li>Loading...</li>
     </ul>
@@ -37,6 +43,9 @@ query boisukes {
     photo {
       url
     }
+    pdf {
+      url
+    }
   }
 }`;
 
@@ -44,4 +53,9 @@ const boisukes = ref();
 const { data } = await useAsyncQuery(query);
 console.log(data.value);
 boisukes.value = data.value.boisukes;
+
+
+const openPdf = (pdfUrl) => {
+  window.open(pdfUrl, '_blank');
+};
 </script>
