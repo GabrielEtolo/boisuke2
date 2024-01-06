@@ -2,7 +2,7 @@
   <nav class="text-zinc-200">
     <ul>
       <li><NuxtLink to="/about">About</NuxtLink></li>
-      <li><NuxtLink to="/product">Product</NuxtLink></li>
+      <li><NuxtLink to="/product">Galerie</NuxtLink></li>
       <li><NuxtLink to="/contact">Contact</NuxtLink></li>
     </ul>
   </nav>
