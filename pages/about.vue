@@ -38,7 +38,7 @@
         </div>
         <div class="font-medium text-lg">{{ member.nom }}</div>
         <div class="text-gray-500">{{ member.poste }}</div>
-        
+        <div class="font-medium w-64 text-lg"></div>
       </div>
     </div>
     <p class="text-xl mb-4">
@@ -50,27 +50,6 @@
       l'émotion du moment, les bonheurs invisibles
     </p>
     <p class="text-gray-300 leading-relaxed my-16">
-      <b>Boisuke </b>est plus qu'un magazine – c'est un écho vibrant de la
-      jeunesse contemporaine, un hymne visuel à la beauté brute de l'existence.
-      Né au début de 2023, notre collectif s'est engagé à capturer ces
-      étincelles de vie qui définissent notre époque. Dans un monde qui émerge
-      des ombres d'une pandémie, nous trouvons de la lumière, de l'audace et une
-      nouvelle perspective. <br /><br />
-
-      Nous sommes les narrateurs visuels d'un lifestyle en évolution, un trio de
-      créateurs fusionnant nos regards pour documenter la vie et les moments
-      éphémères de cette jeunesse transformée. <b>"Boisuke" </b> est le reflet
-      d'un changement, une chronique intime des jours et des nuits qui façonnent
-      notre maintenant.
-      <br />
-      <br />
-      Sortis du confinement du COVID, nous avons vu des changements
-      significatifs dans notre façon de vivre, de rêver et de partager.
-      <b>"Boisuke" </b> représente cette transition, ces sourires retrouvés, ces
-      embrassades chaleureuses, ces rires partagés sans la barrière d'un écran.
-      Notre mission est simple : saisir l'authenticité des instants vécus, sans
-      filtre ni façade, pour les retranscrire dans un panorama qui parle au
-      monde. <br /><br />
 
       <b>"Boisuke" </b> est une invitation à célébrer le quotidien, à
       reconnaître les bonheurs invisibles souvent négligés et à chérir les liens
