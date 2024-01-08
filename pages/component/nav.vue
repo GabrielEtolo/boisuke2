@@ -5,6 +5,7 @@
       <li><NuxtLink to="/product">Galerie</NuxtLink></li>
       <li><NuxtLink to="/contact">Contact</NuxtLink></li>
       <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+      <li><NuxtLink to="/prod">Items</NuxtLink></li>
     </ul>
   </nav>
 </template>
@@ -48,5 +49,5 @@ a:hover {
   transition: 1s ease-in;
 }
 
-/* Add styles for a hover effect */
+
 </style>
