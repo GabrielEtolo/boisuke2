@@ -19,7 +19,7 @@
         </div>
         <div class="px-6 pt-4 pb-2">
           <nuxt-link 
-            :to="`/blogs/${item.categorie}`" 
+            :to="`/items/${item.categorie}`" 
             class="bg-gray-900 text-white font-bold py-2 px-4 rounded hover:bg-gray-700"
           >
             Lire l'article

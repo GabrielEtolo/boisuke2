@@ -4,6 +4,7 @@
     <div class="flex flex-col items-center px-10 w-full">
       <img :src="item.photo.url" alt="" class="w-2/5 h-auto">
       <p class="p-8">{{ item.description }}</p>
+      <a href="https://www.instagram.com/boisuke.editions/" class="py-12">Contactez-nous pour commander</a>
     </div>
   </div>
   
