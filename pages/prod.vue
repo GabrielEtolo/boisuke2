@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto p-6">
-  <h1 class="text-5xl flex justify-center font-bold mb-10">ITEMS.</h1>
+    <h1 class="text-5xl flex justify-center font-bold mb-10">PRODUITS.</h1>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <div 
         v-for="item in items" 
@@ -9,7 +9,7 @@
       >
         <div 
           class="h-48 bg-cover bg-center" 
-          :style="{ backgroundImage: 'url(' + item.photo[0].url + ')' }"
+          :style="{ backgroundImage: 'url(' + item.photo.url + ')' }"
         ></div>
         <div class="px-6 py-4">
           <div class="font-bold text-zinc-950 text-xl mb-2">{{ item.titre }}</div>
@@ -28,7 +28,8 @@
       </div>
     </div>
   </div>
-  </template>
+</template>
+
 <script setup>
 const query = gql`
 query MyQuery {
@@ -38,9 +39,9 @@ query MyQuery {
     }
     titre
     description
+    categorie
   }
-}
-`;
+}`;
 
 const items = ref();
 const { data } = await useAsyncQuery(query);
@@ -54,49 +55,5 @@ function getExcerpt(text) {
 </script>
 
 <style scoped>
-.blog-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
-
-.blog-card {
-  width: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.blog-media {
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-}
-
-.blog-titre {
-  padding: 16px;
-  background-color: #f5f5f5; /* Gris clair */
-  margin: 0; /* Retirer les marges par défaut */
-}
-
-.blog-excerpt {
-  padding: 16px;
-}
-
-.blog-link {
-  padding: 16px;
-  display: block;
-  text-align: center;
-  background-color: #333; /* Gris foncé */
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.blog-link:hover {
-  background-color: #555;
-}
+/* Styles restent inchangés */
 </style>
