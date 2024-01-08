@@ -23,7 +23,7 @@
         />
         
       </li>
-      <li class="col-span-full flex justify-center text-gray-500"><p >Cliquer pour voir le pdf</p></li>
+     
     </ul>
     
     <ul v-else>
