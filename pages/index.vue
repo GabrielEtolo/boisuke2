@@ -18,7 +18,7 @@
           :src="boisukes[0].photo.url"
           :alt="boisukes[0].title"
           class="lg:w-1/4 h-auto rounded-lg shadow sm:w-3/4"
-           @click="openPdf(boisukes[0].pdf.url)"
+          
           
         />
         
